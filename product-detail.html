@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | ADELPHOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/brand.webp" alt="ADELPHOS Branding" class="nav-brand">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#shop">Collection</a></li>
+                <li><a href="index.html#checkout">Checkout</a></li>
+            </ul>
+            <div class="cart-btn-container">
+                <button id="view-cart" class="btn-cart">
+                    <span class="desktop-text">Cart</span>
+                    <span id="cart-count" class="cart-count" style="display: none;">0</span>
+                    <span class="mobile-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </span>
+                </button>
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <div class="cart-dropdown-header">
+                        <h3 class="desktop-text">Selection</h3>
+                        <h3 class="mobile-icon">Menu</h3>
+                        <button id="close-cart" class="btn-close">&times;</button>
+                    </div>
+                    <div class="mobile-nav-links">
+                        <a href="index.html#shop" class="btn-secondary mobile-link">View Collection</a>
+                        <a href="index.html#checkout" class="btn-primary mobile-link"
+                            style="background: var(--clr-contrast); color: var(--clr-bg); border: none;">Submit An
+                            Order</a>
+                    </div>
+                    <div id="cart-items" class="cart-items">
+                        <p class="empty-msg">No items selected.</p>
+                    </div>
+                    <div class="cart-dropdown-footer">
+                        <div class="cart-total">Total: <span id="cart-total-value">₱0</span></div>
+                        <a href="index.html#checkout" class="btn-primary full-width mobile-link">Submit Order</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="detail-page-wrapper">
+            <div class="detail-left-column">
+                <a href="index.html#shop" class="back-link">&larr; Back to Collection</a>
+                <div class="detail-image-section glass">
+                    <img id="detail-img" src="" alt="Product Image">
+                </div>
+                <div class="quality-content subtle-quality">
+                    <!--  -->
+                    <p class="quality-text">Our apparel features premium graphics designed by us. Made with breathable,
+                        high-quality materials for durability, comfort, and style.</p>
+                </div>
+            </div>
+            <div class="detail-info-section">
+                <h1 id="detail-name" class="detail-title">Loading...</h1>
+                <p id="detail-price" class="detail-price">₱ 0</p>
+                <div class="detail-divider"></div>
+                <p id="detail-desc" class="detail-description">Please wait while we load the brotherhood apparel
+                    details.</p>
+
+                <div class="">
+                    <div class="form-group">
+                        <label for="detail-size">Select Your Size</label>
+                        <select id="detail-size" class="detail-select">
+                            <option value="S">Small</option>
+                            <option value="M">Medium</option>
+                            <option value="L" selected>Large</option>
+                            <option value="XL">XL</option>
+                            <option value="2XL">2XL</option>
+                            <option value="3XL">3XL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="detail-actions">
+                    <button id="detail-add-btn" class="btn-primary btn-large">Add to Cart</button>
+                </div>
+                <div class="detail-meta">
+                    <p><span>Shipping:</span> Available nationwide and for pickup during ANCOM 2026</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-links">
+                <h4>Information</h4>
+                <p>orders@adelphosmanila.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Adelphos-Apparel/61550505397979/" target="_blank"
+                        class="social-link" aria-label="Facebook">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/adelphos_apparel/" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-accreditation">
+                <h4>Brotherhood</h4>
+                <p>Accredited by Master Worshipful of the Grand Lodge of the Philippines</p>
+            </div>
+            <div class="footer-brand">
+                <h3>ADELPHOS MANILA</h3>
+                <p class="footer-attribution">Designed by <span class="brand-highlight">Vega Design Studio</span></p>
+                <div class="motto-square">
+                    <div class="motto-line">
+                        <span>BY</span>
+                        <span class="masonic-blue">BRETHREN</span>
+                    </div>
+                    <div class="motto-line">
+                        <span>FOR</span>
+                        <span class="masonic-blue">BRETHREN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adelphos. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/logic.js"></script>
+</body>
+
+</html>

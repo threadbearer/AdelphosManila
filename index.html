@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADELPHOS | Premium Masonic Apparel</title>
+    <meta name="description"
+        content="Exclusive brotherhood-inspired masonic apparel for the modern mason. Premium shirts, accessories, and gear for the Grand Lodge of the Philippines community.">
+    <meta property="og:title" content="ADELPHOS | Premium Masonic Apparel">
+    <meta property="og:description"
+        content="Exclusive brotherhood-inspired masonic apparel for the modern mason. Premium shirts, accessories, and gear for the Grand Lodge of the Philippines community.">
+    <!-- Note: Open Graph protocol requires an absolute URL. Be sure to include your site's domain (e.g., https://yourdomain.com/assets/img/brand-og.webp) when going to production -->
+    <meta property="og:image" content="https://adelphosmanila.com/assets/img/brand-og.webp">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>A</text></svg>">
+</head>
+
+<body>
+    <header id="site-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="assets/img/brand.webp" alt="ADELPHOS Branding" class="nav-brand">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#shop">Collection</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+            <div class="cart-btn-container">
+                <button id="view-cart" class="btn-cart">
+                    <span class="desktop-text">Cart</span>
+                    <span id="cart-count" class="cart-count" style="display: none;">0</span>
+                    <span class="mobile-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </span>
+                </button>
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <div class="cart-dropdown-header">
+                        <h3 class="desktop-text">Selection</h3>
+                        <h3 class="mobile-icon">Menu</h3>
+                        <button id="close-cart" class="btn-close">&times;</button>
+                    </div>
+                    <div class="mobile-nav-links">
+                        <a href="#shop" class="btn-secondary mobile-link">View Collection</a>
+                        <a href="#checkout" class="btn-primary mobile-link"
+                            style="background: var(--clr-contrast); color: var(--clr-bg); border: none;">Submit An
+                            Order</a>
+                    </div>
+                    <div id="cart-items" class="cart-items">
+                        <p class="empty-msg">No items selected.</p>
+                    </div>
+                    <div class="cart-dropdown-footer">
+                        <div class="cart-total">Total: <span id="cart-total-value">₱0</span></div>
+                        <p class="subtitle-2">Our apparel is available <u
+                                style="text-decoration-color: var(--clr-primary);">exclusively</u> to Freemasons.</p>
+                        <a href="#checkout" class="btn-primary full-width mobile-link">Submit Order</a>
+                    </div>
+                    <p class="subtitle">Submit a <span style="color: var(--clr-primary);">Purchase Order</span>
+                        and we will
+                        process your order after membership verification.</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="event-banner" class="event-banner-v2">
+            <div class="banner-panels">
+                <div class="panel panel-left"
+                    style="background-image: url('assets/img/Collection/Banner Image 1.webp')"></div>
+                <div class="panel panel-right"
+                    style="background-image: url('assets/img/Collection/Banner Image 2.webp')"></div>
+            </div>
+            <div class="banner-overlay-card glass">
+                <div class="banner-pre">Available at</div>
+                <h2 class="banner-heading">ANCOM 2026</h2>
+                <div class="banner-tag">Tagaytay City, Philippines</div>
+                <div class="banner-location">Join us at the Tagaytay City Sports Complex</div>
+                <div class="banner-date">April 22 &mdash; 25, 2026</div>
+                <p class="banner-desc">The Annual Communication of the Most Worshipful Grand Lodge of Free and Accepted
+                    Masons of the Philippines.</p>
+                <div class="banner-cta">
+                    <a href="#shop" class="btn-primary">Shop The Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero" class="hero-section">
+            <div class="hero-content container">
+                <img src="assets/img/logo.webp" alt="Masonic Rook Centerpiece" class="hero-logo">
+                <h1 class="reveal-text">Architectural Excellence for the Brotherhood</h1>
+                <p class="tagline">Premium Apparel crafted for those who value the Square and Compass.</p>
+                <div class="hero-btns">
+                    <a href="#shop" class="btn-primary">View Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="shop-section">
+            <div class="container">
+                <div class="container">
+                    <h2 class="section-title">The Curated Collection</h2>
+                </div>
+                <div id="product-grid" class="product-grid">
+                    <!-- Products dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+
+        <section id="process" class="process-section">
+            <div class="container">
+                <h2 class="section-title">How to Submit Your Order</h2>
+                <p><span class="big-text">1. Select </span>your items from our <u
+                        style="text-decoration-color: var(--clr-primary);">Collection</u>, up above. </p>
+                <p><span class="big-text">2. Submit </span>your <u
+                        style="text-decoration-color: var(--clr-primary);">Order Request</u>, down
+                    below.</p>
+            </div>
+        </section>
+
+        <section id="checkout" class="checkout-section">
+            <div class="container checkout-wrapper">
+                <div class="checkout-card glass">
+                    <h2 class="section-title">Submit Your Purchase
+                        Request</h2>
+                    <p class="subtitle-2">Our apparel is available <u>exclusively</u>
+                        to
+                        Freemasons.</p>
+                    <p class=" subtitle">Submit this <span style="color: var(--clr-primary);">Purchase Request</span>
+                        and we will
+                        process your order after membership verification.</p>
+
+                    <form id="order-form" class="form-grid">
+
+                        <div class="form-group row-1">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="Name" placeholder="Bro. First and Last Name"
+                                required>
+                        </div>
+                        <div class="form-group row-1">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" name="Phone" placeholder="+63 9xx xxxx xxxx">
+                        </div>
+
+
+                        <div class="form-group row-1">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="Email" placeholder="brother@example.com">
+                        </div>
+                        <div class="form-group row-2">
+                            <label for="fb-profile">Facebook Profile Link / Name</label>
+                            <input type="text" id="fb-profile" name="Facebook"
+                                placeholder="https://facebook.com/brother.name">
+                        </div>
+
+                        <div class="form-group row-2">
+                            <label for="lodge-name">Lodge Name & No.</label>
+                            <input type="text" id="lodge-name" name="Lodge-Name-#"
+                                placeholder="e.g. Keystone Lodge No. 100">
+                        </div>
+                        <div class="form-group row-2">
+                            <label for="grand-lodge">Grand Lodge</label>
+                            <input type="text" id="grand-lodge" name="Grand-Lodge" placeholder="e.g. GLP">
+                        </div>
+                        <div class="form-group row-3">
+                            <label for="masonic-id">Masonic ID (recommended)</label>
+                            <input type="text" id="masonic-id" name="Masonic-ID" placeholder="Grand Lodge ID No.">
+                        </div>
+
+                        <div class="form-group row-3">
+                            <label for="dues-card">Supporting Document (e.g. Dues Card)</label>
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="dues-card" name="Supporting-Documents" accept="image/*,.pdf"
+                                    capture="environment" class="file-input">
+                                <div class="file-upload-display">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name">Upload Image / PDF</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group full-width">
+                            <label>Cart Summary</label>
+                            <div id="visual-cart" class="visual-cart-form">
+                                <!-- Visual items here -->
+                                <p class="empty-msg">Items in your cart will be listed here.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="order-comments">Questions and Order Comments</label>
+                            <textarea id="order-comments" name="Questions-Comments"
+                                placeholder="Any specific requests or questions for the brethren..."></textarea>
+                            <textarea id="cart-data" name="Item-Summary" hidden></textarea>
+                        </div>
+
+                        <div class="form-footer full-width">
+                            <p class="disclaimer"> Upon submission, we will contact you via your provided method to
+                                verify membership and finalize payment.</p>
+                            <div class="detail-meta">
+                                <p><span>Shipping:</span> Available nationwide and for pickup during ANCOM 2026</p>
+                            </div>
+                            <button type="submit" id="submit-order" class="btn-primary full-width">Submit for
+                                Verification</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-accreditation">
+                <h4>Brotherhood</h4>
+                <p>Accredited by Most Worshipful Grand Lodge of the Philippines.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Information</h4>
+                <p>orders@adelphosmanila.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Adelphos-Apparel/61550505397979/" target="_blank"
+                        class="social-link" aria-label="Facebook">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/adelphos_apparel/" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-brand">
+                <h3>ADELPHOS MANILA</h3>
+                <p class="footer-attribution">Designed by <span class="brand-highlight">Vega Design Studio</span></p>
+                <div class="motto-square">
+                    <div class="motto-line">
+                        <span>BY</span>
+                        <span class="masonic-blue">BRETHREN</span>
+                    </div>
+                    <div class="motto-line">
+                        <span>FOR</span>
+                        <span class="masonic-blue">BRETHREN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adelphos. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast-notification" class="toast">
+        <div class="toast-content">
+            <span class="toast-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--clr-primary)">
+                    <!-- Compass Legs -->
+                    <polygon points="12,3 4,19 6,20 12,8" />
+                    <polygon points="12,3 20,19 18,20 12,8" />
+                    <!-- Compass Pivot -->
+                    <circle cx="12" cy="3" r="1.5" />
+                    <!-- Square -->
+                    <path d="M4 14 L12 22 L20 14 L18.5 12.5 L12 19 L5.5 12.5 Z" />
+                    <!-- The Central 'G' -->
+                    <text x="12" y="16" font-family="serif" font-weight="bold" font-size="7" fill="var(--clr-primary)"
+                        text-anchor="middle">G</text>
+                </svg>
+            </span>
+            <div class="toast-text">
+                <strong>A Quick Note, Brother!</strong>
+                <p>Orders are finalized only after an honest membership check. Submit your request and we'll get back to
+                    you shortly!</p>
+            </div>
+            <button id="close-toast" class="btn-close-toast">&times;</button>
+        </div>
+    </div>
+
+    <script src="assets/js/logic.js"></script>
+</body>
+
+</html>
